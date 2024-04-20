@@ -9,10 +9,36 @@
     <link rel="icon" href="./Assets/portfolio image.jpg" type="image/icon">
 </head>
 <body>
+    <!-- Modals -->
+    <div class="modals">
+        <!-- <div class="modal-wrapper"> -->
+            <dialog class="success-modal">
+                <p class="heading">Success!</p>
+                <div>
+                    <p class="title">Your messae has been delivered!</p>
+                    <p class="subtitle"> Soon, I will get back to you on your phone or email.</p>
+                </div>
+                <form method="dialog">
+                    <button>OK</button>
+                </form>
+            </dialog>
+            <dialog class="failure-modal">
+                <p class="heading">Uh Ohh!</p>
+                <div>
+                    <p class="title">Your messae couldn't be delivered!</p>
+                    <p class="subtitle"> Please try again later.</p>
+                </div>
+                <form method="dialog">
+                    <button>OK</button>
+                </form>
+            </dialog>
+        <!-- </div> -->
+
+    </div>
 
     <!--header site-->
      <header>
-         <div class="logo"><span>P</span>ushpa.</div>
+         <div class="logo"><a href="./Login Page/index.html"><span>P</span>ushpa.</a></div>
          <ul class="navlist">
             <li><a href="#home" style="--i:1;" >Home</a></li>
             <li><a href="#about" style="--i:2;" >About</a></li>
@@ -424,12 +450,12 @@
         <span>ask me question</span>
         <h2>Contact Me</h2>
     </div>
-    <form action="#" id="contacts" class="scroll-scale">
-        <input type="text" placeholder="Your Name">
-        <input type="text" placeholder="Your Email">
-        <input type="text" placeholder="Your Address">
-        <input type="number" placeholder="Phone Number">
-        <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+    <form action="#" id="contacts-form" class="scroll-scale">
+        <input type="text" name="name" placeholder="Your Name" required >
+        <input type="text" name="email" placeholder="Your Email" required >
+        <input type="text" name="address" placeholder="Your Address" required >
+        <input type="number" name="phone" placeholder="Phone Number" required >
+        <textarea id="" cols="30" rows="10" name="message" placeholder="Your Message" required ></textarea>
         <div class="btn-box formBtn">
              <button type="submit" class="btn">Send Message</button>
         </div>
